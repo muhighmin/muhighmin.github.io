@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ahmed Muhaimin Choudhury",
+    "section": "",
+    "text": "I am a data scientist in the making, currently in UBC’s Master of Data Science program. My path here ran through a Master’s in Economics, where a causal-impact study on COVID-19’s effect on Bangladesh’s macroeconomy first pulled me toward the field. Before circling back to it, I spent seven years as a creative director in Bangladeshi advertising, learning how to turn complexity into things people actually understand. That combination is what I bring: quantitative rigour with the communication craft to match. Long-term, I am drawn to high-stakes, data-rich domains like energy markets, healthcare analytics, and derivatives, where good models change real decisions and clear explanations of them are rare."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "I got to Canada a month before the program started and spent it in Calgary with my wife, easing into the country before easing into the degree. We spent our anniversary glamping in Kananaskis, drove up to Banff, and I picked up paddleboarding on Bow Lake, Barrier Lake, and a handful of others whose names I’ve already lost. I flew into Vancouver the day before orientation, which in hindsight was cutting it close, but I’d wanted every last day of that Alberta stretch. My first impression of UBC is that I would not want to leave in ten months. I’ve been slowly working my way through it since, the Museum of Anthropology, Tower Beach, the Rose Garden, Nitobe, all of it quietly making the case that this was the right choice.\nOrientation was the fun part. Somewhere between the icebreakers and the campus goose chase, I stopped feeling like the new guy and started feeling like part of a cohort. A lot of the pep talks were built around how to survive the program, which was a strange note to open on given that most of us were already plenty scared, but I got to meet people, had fun explaining how to pronounce my name, and run around the campus with Barry, Rshan, Yeme, Julia, and Abdul on the goose chase. There was also a running theme of warnings about how depressing Vancouver gets in winter. Jury’s still out.\nThen week one arrived and we were thrown straight onto the roller coaster tracks. Not even the seats, just the tracks. We’ve been zooming past labs and worksheets ever since. The workload is genuinely intense, but the trauma bonding it produces is more intense still, and it’s been wonderful to see how many different paths and peole have crossed their paths here. I’m overwhelmed, I haven’t seen the inside of a gym since I got here, and I’m trying to keep my head above water long enough to actually enjoy what I signed up for. I’ve got ten months to figure out what I’m doing, ace the next quiz, and build something I’m proud of. That’s the plan for now.\n\n\n\nCampus goose chase with the crew, still pretending we knew where we were going."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -33,12 +54,5 @@
     "title": "About",
     "section": "Outside of data science",
     "text": "Outside of data science\nWeekends usually mean poker with friends, paddleboarding (something I picked up recently and can’t get enough of), or a good film. I’ll take a thriller, a crime story, sci-fi, or a slow drama, in any order. When none of that fits the mood, I disappear into a passion project and vibe-code my way through it until the sun is up. I play the guitar and love grunge, hip hop, and metal, though Murakami on the shelf and a FIFA session on the couch balance things out. I cook a killer khichuri and biryani, and if you’ve had my milk tea you already know. Right now I’m learning Japanese and French, studying chess seriously enough to lose sleep over it, and building the courage to try learning skydiving and scuba diving within the next year. I love writing poems and making short reels which are small love letters to the life I have and all the amazing git people in it."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ahmed Muhaimin Choudhury",
-    "section": "",
-    "text": "I am a data scientist in the making, currently in UBC’s Master of Data Science program. My path here ran through a Master’s in Economics, where a causal-impact study on COVID-19’s effect on Bangladesh’s macroeconomy first pulled me toward the field. Before circling back to it, I spent seven years as a creative director in Bangladeshi advertising, learning how to turn complexity into things people actually understand. That combination is what I bring: quantitative rigour with the communication craft to match. Long-term, I am drawn to high-stakes, data-rich domains like energy markets, healthcare analytics, and derivatives, where good models change real decisions and clear explanations of them are rare."
   }
 ]
