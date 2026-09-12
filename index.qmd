@@ -1,7 +1,8 @@
 ---
-title: "Muhaimin101"
+title: "Ahmed Muhaimin Choudhury"
 ---
+about:
+  template: trestles
+  (images/profile.jpg){width=250px}
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am a data scientist in the making, currently in UBC's Master of Data Science program. My path here ran through a Master's in Economics, where a causal-impact study on COVID-19's effect on Bangladesh's macroeconomy first pulled me toward the field. Before circling back to it, I spent seven years as a creative director in Bangladeshi advertising, learning how to turn complexity into things people actually understand. That combination is what I bring: quantitative rigour with the communication craft to match. Long-term, I am drawn to high-stakes, data-rich domains like energy markets, healthcare analytics, and derivatives, where good models change real decisions and clear explanations of them are rare.
