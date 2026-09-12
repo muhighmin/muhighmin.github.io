@@ -2,7 +2,7 @@
 title: "Ahmed Muhaimin Choudhury"
 about:
   template: trestles
-  image: images/profile.jpg)
+  image: images/profile.jpg
 ---
 
 
