@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\nNo matching items"
+    "text": "Do Manual Cars Really Pack More Horsepower?\n\n\nAnalysis with: R (dplyr, ggplot2), Quarto\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\nMuhighmin\n\n\n\n\n\n\n\n\n\n\n\n\nCan Flipper Length be used to identify Penguin Species?\n\n\nBuilt with: Python(Pandas, Matplotlib), Quarto\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -54,5 +54,89 @@
     "title": "About",
     "section": "Outside of data science",
     "text": "Outside of data science\nWeekends usually mean poker with friends, paddleboarding (something I picked up recently and can’t get enough of), or a good film. I’ll take a thriller, a crime story, sci-fi, or a slow drama, in any order. When none of that fits the mood, I disappear into a passion project and vibe-code my way through it until the sun is up. I play the guitar and love grunge, hip hop, and metal, though Murakami on the shelf and a FIFA session on the couch balance things out. I cook a killer khichuri and biryani, and if you’ve had my milk tea you already know. Right now I’m learning Japanese and French, studying chess seriously enough to lose sleep over it, and building the courage to try learning skydiving and scuba diving within the next year. I love writing poems and making short reels which are small love letters to the life I have and all the amazing git people in it."
+  },
+  {
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html",
+    "title": "Can Flipper Length be used to identify Penguin Species?",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER, released under CC0.\nFor this post, I will be applying some newfound skills in Python to do a little analysis on the Palmer Penguins dataset."
+  },
+  {
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#environment",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html#environment",
+    "title": "Can Flipper Length be used to identify Penguin Species?",
+    "section": "Environment",
+    "text": "Environment\n\nimport sys\nprint(sys.executable)\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python3\n\n\nThe path above should end in .venv/bin/python inside this repository, confirming the render used the project’s uv-managed environment."
+  },
+  {
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#data",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html#data",
+    "title": "Can Flipper Length be used to identify Penguin Species?",
+    "section": "Data",
+    "text": "Data\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\npenguins = load_penguins().dropna(subset=[\"flipper_length_mm\", \"species\"])\n\nThe Palmer Penguins dataset records measurements from 344 penguins across three species (Adelie, Chinstrap, Gentoo) sampled at Palmer Station, Antarctica. This post looks at one measurement: flipper length."
+  },
+  {
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#summary",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html#summary",
+    "title": "Can Flipper Length be used to identify Penguin Species?",
+    "section": "Summary",
+    "text": "Summary\n\nsummary = (\n    penguins\n    .groupby(\"species\")[\"flipper_length_mm\"]\n    .agg([\"mean\", \"median\", \"std\", \"min\", \"max\", \"count\"])\n    .round(1)\n)\nsummary\n\n\n\nTable 1: Summary statistics of flipper length (mm) across penguin species.\n\n\n\n\n\n\n\n\n\n\nmean\nmedian\nstd\nmin\nmax\ncount\n\n\nspecies\n\n\n\n\n\n\n\n\n\n\nAdelie\n190.0\n190.0\n6.5\n172.0\n210.0\n151\n\n\nChinstrap\n195.8\n196.0\n7.1\n178.0\n212.0\n68\n\n\nGentoo\n217.2\n216.0\n6.5\n203.0\n231.0\n123\n\n\n\n\n\n\n\n\n\n\nBased on flipper length, the three species differ noticeably. Adelie penguins have the shortest flippers on average, Chinstraps sit in the middle, and Gentoos are clearly the largest."
+  },
+  {
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#visualization",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html#visualization",
+    "title": "Can Flipper Length be used to identify Penguin Species?",
+    "section": "Visualization",
+    "text": "Visualization\n\nfig, ax = plt.subplots(figsize=(7, 4.5))\nspecies_order = [\"Adelie\", \"Chinstrap\", \"Gentoo\"]\ndata = [penguins.loc[penguins[\"species\"] == s, \"flipper_length_mm\"] for s in species_order]\n\nax.boxplot(data, label=species_order, patch_artist=True)\nax.set_ylabel(\"Flipper length (mm)\")\nax.set_xlabel(\"Species\")\nax.grid(axis=\"y\", alpha=0.3)\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Flipper length distribution by penguin species. Gentoo penguins have the longest flippers by a wide margin."
+  },
+  {
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#inference",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html#inference",
+    "title": "Can Flipper Length be used to identify Penguin Species?",
+    "section": "Inference",
+    "text": "Inference\nFrom the figure, it’s evident that the gap between Gentoo and the other two species is large enough that flipper length alone would be a decent classifier for that species particularly. Adelie and Chinstrap overlap considerably in flipper length, so distinguishing between those two would need additional features than flipper length."
+  },
+  {
+    "objectID": "posts/r-analysis-post-mtcars/index.html",
+    "href": "posts/r-analysis-post-mtcars/index.html",
+    "title": "Do Manual Cars Really Pack More Horsepower?",
+    "section": "",
+    "text": "Data: mtcars, extracted from the 1974 Motor Trend US magazine and bundled with base R. See ?mtcars for the full variable list. Public domain.\nFor ages, stick car people have taunted the automatic car users like they don’t qualify to be on their level. And no one actually questioned, who’s faster? Who packs more horsepower? I am looking for an answer to that question today. Today, is the day of revelation."
+  },
+  {
+    "objectID": "posts/r-analysis-post-mtcars/index.html#environment",
+    "href": "posts/r-analysis-post-mtcars/index.html#environment",
+    "title": "Do Manual Cars Really Pack More Horsepower?",
+    "section": "Environment",
+    "text": "Environment\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n[2] \"/Users/muhighmin/Library/Caches/org.R-project.R/R/renv/sandbox/macos/R-4.6/aarch64-apple-darwin23/46003b10\"                \n\n\nThe first path above should point to this repository’s renv/library/..., confirming the render used the project-local renv environment rather than the system R library."
+  },
+  {
+    "objectID": "posts/r-analysis-post-mtcars/index.html#data",
+    "href": "posts/r-analysis-post-mtcars/index.html#data",
+    "title": "Do Manual Cars Really Pack More Horsepower?",
+    "section": "Data",
+    "text": "Data\n\nlibrary(dplyr)\nlibrary(ggplot2)\n\ncars &lt;- mtcars |&gt;\n  mutate(transmission = if_else(am == 0, \"Automatic\", \"Manual\"))\n\nThe mtcars dataset records fuel consumption and ten aspects of automobile design and performance for 32 cars from the 1973–74 model year. This post asks one question: Do manual-transmission cars tend to have more horsepower than automatic ones?"
+  },
+  {
+    "objectID": "posts/r-analysis-post-mtcars/index.html#summary",
+    "href": "posts/r-analysis-post-mtcars/index.html#summary",
+    "title": "Do Manual Cars Really Pack More Horsepower?",
+    "section": "Summary",
+    "text": "Summary\n\n\n\nTable 1: Summary statistics of horsepower across both types of transmissions in cars.\n\n\ncars |&gt;\n  group_by(transmission) |&gt;\n  summarise(\n    n = n(),\n    mean_hp = round(mean(hp), 1),\n    median_hp = round(median(hp), 1),\n    sd_hp = round(sd(hp), 1),\n    min_hp = min(hp),\n    max_hp = max(hp)\n  )\n\n# A tibble: 2 × 7\n  transmission     n mean_hp median_hp sd_hp min_hp max_hp\n  &lt;chr&gt;        &lt;int&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1 Automatic       19    160.       175  53.9     62    245\n2 Manual          13    127.       109  84.1     52    335\n\n\n\n\nAutomatic cars in this dataset actually have a higher mean horsepower than manual cars, but the standard deviation is large and the sample size is small. The distribution matters more than the mean."
+  },
+  {
+    "objectID": "posts/r-analysis-post-mtcars/index.html#visualization",
+    "href": "posts/r-analysis-post-mtcars/index.html#visualization",
+    "title": "Do Manual Cars Really Pack More Horsepower?",
+    "section": "Visualization",
+    "text": "Visualization\n\nggplot(cars, aes(x = hp, fill = transmission)) +\n  geom_density(alpha = 0.5) +\n  labs(\n    x = \"Horsepower\",\n    y = \"Density\",\n    fill = \"Transmission\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Density of horsepower by transmission type. Automatic cars show a heavier right tail, while manual cars cluster more tightly at the lower end."
+  },
+  {
+    "objectID": "posts/r-analysis-post-mtcars/index.html#inference",
+    "href": "posts/r-analysis-post-mtcars/index.html#inference",
+    "title": "Do Manual Cars Really Pack More Horsepower?",
+    "section": "Inference",
+    "text": "Inference\nThe density plot tells a more nuanced story than the summary means. Manual cars concentrate in the 60–130 hp range, whereas automatics are more spread out and include a heavier right tail up past 300 hp. The perception that “manuals are always sportier” doesn’t hold in this dataset as it’s the automatics that carry the high-horsepower muscle cars of the mid-1970s. A larger, more modern sample would probably flip the story, but for 1974 Motor Trend cars, automatic transmission and high horsepower go together more often than not."
   }
 ]

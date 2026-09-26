@@ -1,0 +1,74 @@
+---
+title: "Can Flipper Length be used to identify Penguin Species?"
+subtitle: "Built with: Python(Pandas, Matplotlib), Quarto"
+author: "Ahmed Muhaimin Choudhury"
+date: 2026-09-24
+---
+
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), Palmer Station Antarctica LTER, released under CC0.
+
+For this post, I will be applying some newfound skills in Python to do a little analysis on the Palmer Penguins dataset. 
+
+## Environment
+
+```{python}
+#| label: env-check
+import sys
+print(sys.executable)
+```
+
+The path above should end in `.venv/bin/python` inside this repository, confirming the render used the project's `uv`-managed environment.
+
+
+## Data
+
+```{python}
+#| label: setup
+#| message: false
+#| warning: false
+from palmerpenguins import load_penguins
+import pandas as pd
+import matplotlib.pyplot as plt
+
+penguins = load_penguins().dropna(subset=["flipper_length_mm", "species"])
+```
+
+The Palmer Penguins dataset records measurements from 344 penguins across three species (Adelie, Chinstrap, Gentoo) sampled at Palmer Station, Antarctica. This post looks at one measurement: flipper length.
+
+## Summary
+
+```{python}
+#| label: tbl-flipper-summary
+#| tbl-cap: "Summary statistics of flipper length (mm) across penguin species."
+
+summary = (
+    penguins
+    .groupby("species")["flipper_length_mm"]
+    .agg(["mean", "median", "std", "min", "max", "count"])
+    .round(1)
+)
+summary
+```
+
+Based on flipper length, the three species differ noticeably. Adelie penguins have the shortest flippers on average, Chinstraps sit in the middle, and Gentoos are clearly the largest.
+
+## Visualization
+
+
+```{python}
+#| label: fig-flipper-boxplot
+#| fig-cap: "Flipper length distribution by penguin species. Gentoo penguins have the longest flippers by a wide margin."
+fig, ax = plt.subplots(figsize=(7, 4.5))
+species_order = ["Adelie", "Chinstrap", "Gentoo"]
+data = [penguins.loc[penguins["species"] == s, "flipper_length_mm"] for s in species_order]
+
+ax.boxplot(data, label=species_order, patch_artist=True)
+ax.set_ylabel("Flipper length (mm)")
+ax.set_xlabel("Species")
+ax.grid(axis="y", alpha=0.3)
+plt.show()
+```
+
+## Inference
+
+From the figure, it's evident that the gap between Gentoo and the other two species is large enough that flipper length alone would be a decent classifier for that species particularly. Adelie and Chinstrap overlap considerably in flipper length, so distinguishing between those two would need additional features than flipper length.

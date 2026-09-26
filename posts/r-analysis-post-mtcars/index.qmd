@@ -1,0 +1,77 @@
+---
+title: "Do Manual Cars Really Pack More Horsepower?"
+subtitle: "Analysis with: R (dplyr, ggplot2), Quarto"
+author: "Muhighmin"
+date: "2026-09-25"
+---
+
+Data: `mtcars`, extracted from the 1974 *Motor Trend* US magazine and bundled with base R. See `?mtcars` for the full variable list. Public domain.
+
+For ages, stick car people have taunted the automatic car users like they don't qualify to be on their level. And no one actually questioned, who's faster? Who packs more horsepower? I am looking for an answer to that question today. Today, is the day of revelation.
+
+
+## Environment
+
+```{r}
+#| label: env-check
+R.version.string
+.libPaths()
+```
+
+The first path above should point to this repository's `renv/library/...`, confirming the render used the project-local `renv` environment rather than the system R library.
+
+## Data
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+library(dplyr)
+library(ggplot2)
+
+cars <- mtcars |>
+  mutate(transmission = if_else(am == 0, "Automatic", "Manual"))
+```
+
+The `mtcars` dataset records fuel consumption and ten aspects of automobile design and performance for 32 cars from the 1973–74 model year. This post asks one question: Do manual-transmission cars tend to have more horsepower than automatic ones? 
+
+## Summary
+
+```{r}
+#| label: tbl-hp-summary
+#| tbl-cap: "Summary statistics of horsepower across both types of transmissions in cars."
+cars |>
+  group_by(transmission) |>
+  summarise(
+    n = n(),
+    mean_hp = round(mean(hp), 1),
+    median_hp = round(median(hp), 1),
+    sd_hp = round(sd(hp), 1),
+    min_hp = min(hp),
+    max_hp = max(hp)
+  )
+```
+
+Automatic cars in this dataset actually have a higher mean horsepower than manual cars, but the standard deviation is large and the sample size is small. The distribution matters more than the mean.
+
+## Visualization
+
+```{r}
+#| label: fig-hp-density
+#| fig-cap: "Density of horsepower by transmission type. Automatic cars show a heavier right tail, while manual cars cluster more tightly at the lower end."
+#| fig-width: 7
+#| fig-height: 4.5
+ggplot(cars, aes(x = hp, fill = transmission)) +
+  geom_density(alpha = 0.5) +
+  labs(
+    x = "Horsepower",
+    y = "Density",
+    fill = "Transmission"
+  ) +
+  theme_minimal()
+```
+
+## Inference
+
+The density plot tells a more nuanced story than the summary means. Manual cars concentrate in the 60–130 hp range, whereas automatics are more spread out and include a heavier right tail up past 300 hp. The perception that "manuals are always sportier" doesn't hold in this dataset as it's the automatics that carry the high-horsepower muscle cars of the mid-1970s. A larger, more modern sample would probably flip the story, but for 1974 *Motor Trend* cars, automatic transmission and high horsepower go together more often than not.
+
