@@ -1,7 +1,7 @@
 ---
 title: "Do Manual Cars Really Pack More Horsepower?"
 subtitle: "Analysis with: R (dplyr, ggplot2), Quarto"
-author: "Muhighmin"
+author: "Ahmed Muhaimin Choudhury"
 date: "2026-09-25"
 ---
 
