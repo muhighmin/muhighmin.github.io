@@ -11,49 +11,7 @@
     "href": "index.html",
     "title": "Ahmed Muhaimin Choudhury",
     "section": "",
-    "text": "I am a data scientist in the making, currently in UBC’s Master of Data Science program. My path here ran through a Master’s in Economics, where a causal-impact study on COVID-19’s effect on Bangladesh’s macroeconomy first pulled me toward the field. Before circling back to it, I spent seven years as a creative director in Bangladeshi advertising, learning how to turn complexity into things people actually understand. That combination is what I bring: quantitative rigour with the communication craft to match. Long-term, I am drawn to high-stakes, data-rich domains like energy markets, healthcare analytics, and derivatives, where good models change real decisions and clear explanations of them are rare."
-  },
-  {
-    "objectID": "posts/first-weeks/index.html",
-    "href": "posts/first-weeks/index.html",
-    "title": "My first weeks in MDS",
-    "section": "",
-    "text": "I got to Canada a month before the program started and spent it in Calgary with my wife, easing into the country before easing into the degree. We spent our anniversary glamping in Kananaskis, drove up to Banff, and I picked up paddleboarding on Bow Lake, Barrier Lake, and a handful of others whose names I’ve already lost. I flew into Vancouver the day before orientation, which in hindsight was cutting it close, but I’d wanted every last day of that Alberta stretch. My first impression of UBC is that I would not want to leave in ten months. I’ve been slowly working my way through it since, the Museum of Anthropology, Tower Beach, the Rose Garden, Nitobe, all of it quietly making the case that this was the right choice.\nOrientation was the fun part. Somewhere between the icebreakers and the campus goose chase, I stopped feeling like the new guy and started feeling like part of a cohort. A lot of the pep talks were built around how to survive the program, which was a strange note to open on given that most of us were already plenty scared, but I got to meet people, had fun explaining how to pronounce my name, and run around the campus with my team on the goose chase. There was also a running theme of warnings about how depressing Vancouver gets in winter. Jury’s still out.\nThen week one arrived and we were thrown straight onto the roller coaster tracks. Not even the seats, just the tracks. We’ve been zooming past labs and worksheets ever since. The workload is genuinely intense, but the trauma bonding it produces is more intense still, and it’s been wonderful to see how many different paths and peole have crossed their paths here. I’m overwhelmed, I haven’t seen the inside of a gym since I got here, and I’m trying to keep my head above water long enough to actually enjoy what I signed up for. I’ve got ten months to figure out what I’m doing, ace the next quiz, and build something I’m proud of. That’s the plan for now.\n\n\n\nWhen life was still flowery"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I grew up in Dhaka, obsessed with science fiction and convinced I’d become a scientist who built robots and brain microchips that can copy paste skills. Life took a longer route. In grade 6 I started competitive debating, and the questions that stuck with me were the ones about economics: why do things work the way they do in an underdeveloped country, and who gets to decide. That pulled me toward studying economics, first at BRAC University, then a Master’s at North South University, where my thesis used a causal-impact model employing Bayesian structural time series to estimate how COVID-19 affected Bangladesh’s macroeconomy. The finding I could stand behind was a significant increase in foreign reserves. The rest of the results didn’t survive their p-values, and I learned early how honest data work has to be with itself."
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About",
-    "section": "",
-    "text": "I grew up in Dhaka, obsessed with science fiction and convinced I’d become a scientist who built robots and brain microchips that can copy paste skills. Life took a longer route. In grade 6 I started competitive debating, and the questions that stuck with me were the ones about economics: why do things work the way they do in an underdeveloped country, and who gets to decide. That pulled me toward studying economics, first at BRAC University, then a Master’s at North South University, where my thesis used a causal-impact model employing Bayesian structural time series to estimate how COVID-19 affected Bangladesh’s macroeconomy. The finding I could stand behind was a significant increase in foreign reserves. The rest of the results didn’t survive their p-values, and I learned early how honest data work has to be with itself."
-  },
-  {
-    "objectID": "about.html#from-advertising-to-data-science",
-    "href": "about.html#from-advertising-to-data-science",
-    "title": "About",
-    "section": "From advertising to data science",
-    "text": "From advertising to data science\nSomewhere along the way I also fell in love with writing, so after graduation I spent seven years as a copywriter and creative manager at Asiatic MCL, the largest agency in Bangladesh. My clients included BRAC, Unilever, GSK, PepsiCo, Airtel, Toffee, USAID, and UKAID, among about fifty others. The work I’m proudest of came at the start of the pandemic: a joint project with BRAC and USAID where we built a rumour map of Bangladesh, tracking which misinformation was spreading in which districts, and then produced the TVCs, billboards, and targeted digital work to counter it. It was the first time I saw data and communication saving lives in the same breath."
-  },
-  {
-    "objectID": "about.html#why-data-science",
-    "href": "about.html#why-data-science",
-    "title": "About",
-    "section": "Why data science",
-    "text": "Why data science\nThe pivot started there and finished during my master’s thesis, where R stopped being a tool and became a way of thinking. In advertising I built arguments from cultural insight. I want to build them from evidence I can defend line by line. I sat in enough boardrooms watching decisions turn on a chart no one felt qualified to question, and I got tired of being on the wrong side of that asymmetry. Data science is how I plan to close it, for myself and eventually for the teams and organisations I work with. UBC MDS is where I’m starting, because the program is built for people who care more about problems than about pedigree, and because learning in an environment tied to industry is how I know I learn best."
-  },
-  {
-    "objectID": "about.html#outside-of-data-science",
-    "href": "about.html#outside-of-data-science",
-    "title": "About",
-    "section": "Outside of data science",
-    "text": "Outside of data science\nWeekends usually mean poker with friends, paddleboarding (something I picked up recently and can’t get enough of), or a good film. I’ll take a thriller, a crime story, sci-fi, or a slow drama, in any order. When none of that fits the mood, I disappear into a passion project and vibe-code my way through it until the sun is up. I play the guitar and love grunge, hip hop, and metal, though Murakami on the shelf and a FIFA session on the couch balance things out. I cook a killer khichuri and biryani, and if you’ve had my milk tea you already know. Right now I’m learning Japanese and French, studying chess seriously enough to lose sleep over it, and building the courage to try learning skydiving and scuba diving within the next year. I love writing poems and making short reels which are small love letters to the life I have and all the amazing git people in it."
+    "text": "Hi, this is Muhaimin, an economist by training and advertiser by profession (umm what?!), pivoting towards data science (more umm what?!!). Currently I am studying in UBC’s Master of Data Science program. My path here ran through a Master’s in Economics, where a causal-impact study on COVID-19’s effect on Bangladesh’s macroeconomy first pulled me toward the field. Before circling back to it, I spent seven years as a creative professional in Bangladeshi advertising, learning how to turn complexity into things people actually understand. That combination is what I bring: quantitative rigour with the communication craft to match it. Long-term, I am drawn to high-stakes, data-rich domains like energy markets, healthcare analytics, and derivatives, where good models change real decisions and clear explanations of them are rare."
   },
   {
     "objectID": "posts/python-analysis-post-palmerpenguins/index.html",
@@ -63,11 +21,11 @@
     "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER, released under CC0.\nFor this post, I will be applying some newfound skills in Python to do a little analysis on the Palmer Penguins dataset."
   },
   {
-    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#environment",
-    "href": "posts/python-analysis-post-palmerpenguins/index.html#environment",
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#checking-environment",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html#checking-environment",
     "title": "Can Flipper Length be used to identify Penguin Species?",
-    "section": "Environment",
-    "text": "Environment\n\nimport sys\nprint(sys.executable)\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python3\n\n\nThe path above should end in .venv/bin/python inside this repository, confirming the render used the project’s uv-managed environment."
+    "section": "Checking Environment",
+    "text": "Checking Environment\n\nimport sys\nprint(sys.executable) # confirm render used the project .venv\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python3\n\n\nThe path above should end in .venv/bin/python inside this repository, confirming the render used the project’s uv-managed environment."
   },
   {
     "objectID": "posts/python-analysis-post-palmerpenguins/index.html#data",
@@ -98,6 +56,55 @@
     "text": "Inference\nFrom the figure, it’s evident that the gap between Gentoo and the other two species is large enough that flipper length alone would be a decent classifier for that species particularly. Adelie and Chinstrap overlap considerably in flipper length, so distinguishing between those two would need additional features than flipper length."
   },
   {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "I got to Canada a month before the program started and spent it in Calgary with my wife, easing into the country before easing into the degree. We spent our anniversary glamping in Kananaskis, drove up to Banff, and I picked up paddleboarding on Bow Lake, Barrier Lake, and a handful of others whose names I’ve already lost. I flew into Vancouver the day before orientation, which in hindsight was cutting it close, but I’d wanted every last day of that Alberta stretch. My first impression of UBC is that I would not want to leave in ten months. I’ve been slowly working my way through it since, the Museum of Anthropology, Tower Beach, the Rose Garden, Nitobe, all of it quietly making the case that this was the right choice.\nOrientation was the fun part. Somewhere between the icebreakers and the campus goose chase, I stopped feeling like the new guy and started feeling like part of a cohort. A lot of the pep talks were built around how to survive the program, which was a strange note to open on given that most of us were already plenty scared, but I got to meet people, had fun explaining how to pronounce my name, and run around the campus with my team on the goose chase. There was also a running theme of warnings about how depressing Vancouver gets in winter. Jury’s still out.\nThen week one arrived and we were thrown straight onto the roller coaster tracks. Not even the seats, just the tracks. We’ve been zooming past labs and worksheets ever since. The workload is genuinely intense, but the trauma bonding it produces is more intense still, and it’s been wonderful to see how many different paths and peole have crossed their paths here. I’m overwhelmed, I haven’t seen the inside of a gym since I got here, and I’m trying to keep my head above water long enough to actually enjoy what I signed up for. I’ve got ten months to figure out what I’m doing, ace the next quiz, and build something I’m proud of. That’s the plan for now.\n\n\n\nWhen life was still flowery"
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html",
+    "href": "posts/python-r-analysis-together/index.html",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER, released under CC0.\nThis post uses both Python and R in one document via the reticulate package. Python (pandas) handles the data summary; R (ggplot2) handles the visualization. A pandas DataFrame is passed from Python into R via py$. The analysis tries to find out which penguin species has the biggest bill in the palmer penguin dataset."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#checking-environment",
+    "href": "posts/python-r-analysis-together/index.html#checking-environment",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Checking Environment",
+    "text": "Checking Environment\n\nlibrary(reticulate)\nuse_virtualenv(here::here(\".venv\"))  # point reticulate at the project venv\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1]\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\n\nimport sys\nprint(sys.executable)  # confirm reticulate is using the project venv\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python\n\n\nBoth outputs above should point inside this repository’s renv/ and .venv/ — confirming the two language environments are project-local."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#data-summary-python",
+    "href": "posts/python-r-analysis-together/index.html#data-summary-python",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Data summary (Python)",
+    "text": "Data summary (Python)\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\n\n# drop rows missing species or bill measurements\npenguins = load_penguins().dropna(subset=[\"species\", \"bill_length_mm\", \"bill_depth_mm\"])\n\n\n# mean bill length + depth per species\nsummary_df = (\n    penguins\n    .groupby(\"species\")[[\"bill_length_mm\", \"bill_depth_mm\"]]\n    .mean()\n    .round(2)\n    .reset_index()\n)"
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#handoff-and-table-in-r",
+    "href": "posts/python-r-analysis-together/index.html#handoff-and-table-in-r",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Handoff and table in (R)",
+    "text": "Handoff and table in (R)\nThe summary_df computed in Python is now available in R as py$summary_df. It arrives as a native R data frame. We use this to render the table using knitr::kable, so that the table looks prettier than reticulate’s basic looking data dump.\n\nknitr::kable(py$summary_df) #knitting a pretty looking table\n\n\n\nTable 1: Mean bill length and depth across penguin species.\n\n\n\n\n\n\nspecies\nbill_length_mm\nbill_depth_mm\n\n\n\n\nAdelie\n38.79\n18.35\n\n\nChinstrap\n48.83\n18.42\n\n\nGentoo\n47.50\n14.98\n\n\n\n\n\n\n\n\nAdelie penguins have the shortest bills. Chinstraps and Gentoos have similar bill lengths on average, but Gentoos have noticeably shorter bill depth."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#visualization-in-r",
+    "href": "posts/python-r-analysis-together/index.html#visualization-in-r",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Visualization in R",
+    "text": "Visualization in R\nNow, we will be using R ggplot2 to visualize the data and take a different look at it.\n\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)\n\n# reshape the pandas DataFrame from Python into long format for grouped bars\nplot_data &lt;- py$summary_df |&gt;\n  pivot_longer(\n    cols = c(bill_length_mm, bill_depth_mm),\n    names_to = \"measurement\",\n    values_to = \"mm\"\n  ) |&gt;\n  mutate(\n    measurement = recode(measurement,\n      bill_length_mm = \"Bill length\",\n      bill_depth_mm = \"Bill depth\"\n    )\n  )\n\nggplot(plot_data, aes(x = species, y = mm, fill = measurement)) +\n  geom_col(position = \"dodge\", width = 0.7) +\n  labs(\n    x = \"Species\",\n    y = \"Mean value (mm)\",\n    fill = NULL\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Mean bill length and depth across penguin species. Data aggregated in Python (pandas), visualized in R (ggplot2)."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#inference",
+    "href": "posts/python-r-analysis-together/index.html#inference",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Inference",
+    "text": "Inference\nThe plot shows why bill length alone would misclassify Gentoos. Chinstraps and Gentoos both have long bills (~48mm), and Gentoos have distinctly shorter, blockier bills. But a depth-to-length ratio that sets them apart. Bill length identifies Adelie easily; separating Chinstrap from Gentoo needs depth too. This is a small but concrete example of how interoperability strengthens our modelling by bridging the best of features from 2 different languages."
+  },
+  {
     "objectID": "posts/r-analysis-post-mtcars/index.html",
     "href": "posts/r-analysis-post-mtcars/index.html",
     "title": "Do Manual Cars Really Pack More Horsepower?",
@@ -105,11 +112,11 @@
     "text": "Data: mtcars, extracted from the 1974 Motor Trend US magazine and bundled with base R. See ?mtcars for the full variable list. Public domain.\nFor ages, stick car people have taunted the automatic car users like they don’t qualify to be on their level. And no one actually questioned, who’s faster? Who packs more horsepower? I am looking for an answer to that question today. Today, is the day of revelation."
   },
   {
-    "objectID": "posts/r-analysis-post-mtcars/index.html#environment",
-    "href": "posts/r-analysis-post-mtcars/index.html#environment",
+    "objectID": "posts/r-analysis-post-mtcars/index.html#checking-environment",
+    "href": "posts/r-analysis-post-mtcars/index.html#checking-environment",
     "title": "Do Manual Cars Really Pack More Horsepower?",
-    "section": "Environment",
-    "text": "Environment\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n[2] \"/Users/muhighmin/Library/Caches/org.R-project.R/R/renv/sandbox/macos/R-4.6/aarch64-apple-darwin23/46003b10\"                \n\n\nThe first path above should point to this repository’s renv/library/..., confirming the render used the project-local renv environment rather than the system R library."
+    "section": "Checking Environment",
+    "text": "Checking Environment\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1] # should point to renv/library inside this repo\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\nThis should confirm the render used the project-local renv environment rather than the system R library."
   },
   {
     "objectID": "posts/r-analysis-post-mtcars/index.html#data",
@@ -140,73 +147,38 @@
     "text": "Inference\nThe density plot tells a more nuanced story than the summary means. Manual cars concentrate in the 60–130 hp range, whereas automatics are more spread out and include a heavier right tail up past 300 hp. The perception that “manuals are always sportier” doesn’t hold in this dataset as it’s the automatics that carry the high-horsepower muscle cars of the mid-1970s. A larger, more modern sample would probably flip the story, but for 1974 Motor Trend cars, automatic transmission and high horsepower go together more often than not."
   },
   {
-    "objectID": "posts/python-r-analysis-together/index.html",
-    "href": "posts/python-r-analysis-together/index.html",
-    "title": "Which Penguin Species Has the Biggest Bill?",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER, released under CC0.\nThis post uses both Python and R in one document via the reticulate package. Python (pandas) handles the data summary; R (ggplot2) handles the visualization. A pandas DataFrame is passed from Python into R via py$. The analysis tries to find out which penguin species has the biggest bill in the palmer penguin dataset."
+    "text": "I grew up in Dhaka, obsessed with science fiction and convinced I’d become a scientist who built robots and brain microchips that can copy paste skills. Life took a longer route. In grade 6, I started competitive debating, and the questions that stuck with me were the ones about economics: why do things work the way they do in an underdeveloped country, and who gets to decide. That pulled me toward studying economics, first at BRAC University, then a Master’s at North South University, where my thesis used a causal-impact model employing Bayesian structural time series to estimate how COVID-19 affected Bangladesh’s macroeconomy. The finding I could stand behind was a significant increase in foreign reserves. The rest of the results didn’t survive their p-values, and I learned early how honest data work has to be with itself."
   },
   {
-    "objectID": "posts/python-r-analysis-together/index.html#environment",
-    "href": "posts/python-r-analysis-together/index.html#environment",
-    "title": "Which Penguin Species Has the Biggest Bill?",
-    "section": "Environment",
-    "text": "Environment\n\nlibrary(reticulate)\nuse_virtualenv(here::here(\".venv\"))\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1]\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\n\nimport sys\nprint(sys.executable)\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python\n\n\nBoth outputs above should point inside this repository’s renv/ and .venv/ — confirming the two language environments are project-local."
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in Dhaka, obsessed with science fiction and convinced I’d become a scientist who built robots and brain microchips that can copy paste skills. Life took a longer route. In grade 6, I started competitive debating, and the questions that stuck with me were the ones about economics: why do things work the way they do in an underdeveloped country, and who gets to decide. That pulled me toward studying economics, first at BRAC University, then a Master’s at North South University, where my thesis used a causal-impact model employing Bayesian structural time series to estimate how COVID-19 affected Bangladesh’s macroeconomy. The finding I could stand behind was a significant increase in foreign reserves. The rest of the results didn’t survive their p-values, and I learned early how honest data work has to be with itself."
   },
   {
-    "objectID": "posts/python-r-analysis-together/index.html#data-summary-python",
-    "href": "posts/python-r-analysis-together/index.html#data-summary-python",
-    "title": "Which Penguin Species Has the Biggest Bill?",
-    "section": "Data summary (Python)",
-    "text": "Data summary (Python)\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\n\n# drop rows missing species or bill measurements\npenguins = load_penguins().dropna(subset=[\"species\", \"bill_length_mm\", \"bill_depth_mm\"])\n\n\n# mean bill length + depth per species\nsummary_df = (\n    penguins\n    .groupby(\"species\")[[\"bill_length_mm\", \"bill_depth_mm\"]]\n    .mean()\n    .round(2)\n    .reset_index()\n)"
+    "objectID": "about.html#from-advertising-to-data-science",
+    "href": "about.html#from-advertising-to-data-science",
+    "title": "About",
+    "section": "From advertising to data science",
+    "text": "From advertising to data science\nSomewhere along the way I also fell in love with writing, so after graduation I spent seven years as a copywriter and creative manager at Asiatic MCL, the largest agency in Bangladesh. My clients included BRAC, Unilever, GSK, PepsiCo, Airtel, Toffee, USAID, and UKAID, among about fifty others. The work I’m proudest of came at the start of the pandemic: a joint project with BRAC and USAID where we built a rumour map of Bangladesh, tracking which misinformation was spreading in which districts, and then produced the TVCs, billboards, and targeted digital work to counter it. It was the first time I saw data and communication saving lives in the same breath."
   },
   {
-    "objectID": "posts/python-r-analysis-together/index.html#handoff-and-plot-r",
-    "href": "posts/python-r-analysis-together/index.html#handoff-and-plot-r",
-    "title": "Which Penguin Species Has the Biggest Bill?",
-    "section": "Handoff and plot (R)",
-    "text": "Handoff and plot (R)\nThe summary_df computed in Python is now available in R as py$summary_df. It arrives as a native R data frame.\n\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)\n\nplot_data &lt;- py$summary_df |&gt;\n  pivot_longer(\n    cols = c(bill_length_mm, bill_depth_mm),\n    names_to = \"measurement\",\n    values_to = \"mm\"\n  ) |&gt;\n  mutate(\n    measurement = recode(measurement,\n      bill_length_mm = \"Bill length\",\n      bill_depth_mm = \"Bill depth\"\n    )\n  )\n\nggplot(plot_data, aes(x = species, y = mm, fill = measurement)) +\n  geom_col(position = \"dodge\", width = 0.7) +\n  labs(\n    x = \"Species\",\n    y = \"Mean value (mm)\",\n    fill = NULL\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Mean bill length and depth across penguin species. Data aggregated in Python (pandas), visualized in R (ggplot2)."
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why data science",
+    "text": "Why data science\nThe pivot started there and finished during my master’s thesis, where R stopped being a tool and became a way of thinking. In advertising I built arguments from cultural insight. I want to build them from evidence I can defend line by line. I sat in enough boardrooms watching decisions turn on a chart no one felt qualified to question, and I got tired of being on the wrong side of that asymmetry. Data science is how I plan to close it, for myself and eventually for the teams and organisations I work with. UBC MDS is where I’m starting, because the program is built for people who care more about problems than about pedigree, and because learning in an environment tied to industry is how I know I learn best."
   },
   {
-    "objectID": "posts/python-r-analysis-together/index.html#inference",
-    "href": "posts/python-r-analysis-together/index.html#inference",
-    "title": "Which Penguin Species Has the Biggest Bill?",
-    "section": "Inference",
-    "text": "Inference\nThe plot shows why bill length alone would misclassify Gentoos. Chinstraps and Gentoos both have long bills (~48mm), and Gentoos have distinctly shorter, blockier bills. But a depth-to-length ratio that sets them apart. Bill length identifies Adelie easily; separating Chinstrap from Gentoo needs depth too. This is a small but concrete example of how interoperability strengthens our modelling by bridging the best of features from 2 different languages."
-  },
-  {
-    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#checking-environment",
-    "href": "posts/python-analysis-post-palmerpenguins/index.html#checking-environment",
-    "title": "Can Flipper Length be used to identify Penguin Species?",
-    "section": "Checking Environment",
-    "text": "Checking Environment\n\nimport sys\nprint(sys.executable) # confirm render used the project .venv\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python3\n\n\nThe path above should end in .venv/bin/python inside this repository, confirming the render used the project’s uv-managed environment."
-  },
-  {
-    "objectID": "posts/r-analysis-post-mtcars/index.html#checking-environment",
-    "href": "posts/r-analysis-post-mtcars/index.html#checking-environment",
-    "title": "Do Manual Cars Really Pack More Horsepower?",
-    "section": "Checking Environment",
-    "text": "Checking Environment\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1] # should point to renv/library inside this repo\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\nThis should confirm the render used the project-local renv environment rather than the system R library."
-  },
-  {
-    "objectID": "posts/python-r-analysis-together/index.html#checking-environment",
-    "href": "posts/python-r-analysis-together/index.html#checking-environment",
-    "title": "Which Penguin Species Has the Biggest Bill?",
-    "section": "Checking Environment",
-    "text": "Checking Environment\n\nlibrary(reticulate)\nuse_virtualenv(here::here(\".venv\"))  # point reticulate at the project venv\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1]\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\n\nimport sys\nprint(sys.executable)  # confirm reticulate is using the project venv\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python\n\n\nBoth outputs above should point inside this repository’s renv/ and .venv/ — confirming the two language environments are project-local."
-  },
-  {
-    "objectID": "posts/python-r-analysis-together/index.html#handoff-and-table-in-r",
-    "href": "posts/python-r-analysis-together/index.html#handoff-and-table-in-r",
-    "title": "Which Penguin Species Has the Biggest Bill?",
-    "section": "Handoff and table in (R)",
-    "text": "Handoff and table in (R)\nThe summary_df computed in Python is now available in R as py$summary_df. It arrives as a native R data frame. We use this to render the table using knitr::kable, so that the table looks prettier than reticulate’s basic looking data dump.\n\nknitr::kable(py$summary_df) #knitting a pretty looking table\n\n\n\nTable 1: Mean bill length and depth across penguin species.\n\n\n\n\n\n\nspecies\nbill_length_mm\nbill_depth_mm\n\n\n\n\nAdelie\n38.79\n18.35\n\n\nChinstrap\n48.83\n18.42\n\n\nGentoo\n47.50\n14.98\n\n\n\n\n\n\n\n\nAdelie penguins have the shortest bills. Chinstraps and Gentoos have similar bill lengths on average, but Gentoos have noticeably shorter bill depth."
-  },
-  {
-    "objectID": "posts/python-r-analysis-together/index.html#visualization-in-r",
-    "href": "posts/python-r-analysis-together/index.html#visualization-in-r",
-    "title": "Which Penguin Species Has the Biggest Bill?",
-    "section": "Visualization in R",
-    "text": "Visualization in R\nNow, we will be using R ggplot2 to visualize the data and take a different look at it.\n\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)\n\n# reshape the pandas DataFrame from Python into long format for grouped bars\nplot_data &lt;- py$summary_df |&gt;\n  pivot_longer(\n    cols = c(bill_length_mm, bill_depth_mm),\n    names_to = \"measurement\",\n    values_to = \"mm\"\n  ) |&gt;\n  mutate(\n    measurement = recode(measurement,\n      bill_length_mm = \"Bill length\",\n      bill_depth_mm = \"Bill depth\"\n    )\n  )\n\nggplot(plot_data, aes(x = species, y = mm, fill = measurement)) +\n  geom_col(position = \"dodge\", width = 0.7) +\n  labs(\n    x = \"Species\",\n    y = \"Mean value (mm)\",\n    fill = NULL\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Mean bill length and depth across penguin species. Data aggregated in Python (pandas), visualized in R (ggplot2)."
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nWeekends usually mean poker with friends, paddleboarding (something I picked up recently and can’t get enough of), or a good film. I’ll take a thriller, a crime story, sci-fi, or a slow drama, in any order. When none of that fits the mood, I disappear into a passion project and vibe-code my way through it until the sun is up. I play the guitar and love grunge, hip hop, and metal, though Murakami on the shelf and a FIFA session on the couch balance things out. I cook a killer khichuri and biryani, and if you’ve had my milk tea you already know. Right now I’m learning Japanese and French, studying chess seriously enough to lose sleep over it, and building the courage to try learning skydiving and scuba diving within the next year. I love writing poems and making short reels which are small love letters to the life I have and all the amazing people in it."
   }
 ]
