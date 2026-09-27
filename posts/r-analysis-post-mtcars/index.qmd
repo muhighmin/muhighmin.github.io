@@ -10,15 +10,15 @@ Data: `mtcars`, extracted from the 1974 *Motor Trend* US magazine and bundled wi
 For ages, stick car people have taunted the automatic car users like they don't qualify to be on their level. And no one actually questioned, who's faster? Who packs more horsepower? I am looking for an answer to that question today. Today, is the day of revelation.
 
 
-## Environment
+## Checking Environment
 
 ```{r}
 #| label: env-check
 R.version.string
-.libPaths()
+.libPaths()[1] # should point to renv/library inside this repo
 ```
 
-The first path above should point to this repository's `renv/library/...`, confirming the render used the project-local `renv` environment rather than the system R library.
+This should confirm the render used the project-local `renv` environment rather than the system R library.
 
 ## Data
 
@@ -26,9 +26,11 @@ The first path above should point to this repository's `renv/library/...`, confi
 #| label: setup
 #| message: false
 #| warning: false
+# setup
 library(dplyr)
 library(ggplot2)
 
+# recode transmission from 0/1 to readable labels
 cars <- mtcars |>
   mutate(transmission = if_else(am == 0, "Automatic", "Manual"))
 ```
@@ -40,6 +42,8 @@ The `mtcars` dataset records fuel consumption and ten aspects of automobile desi
 ```{r}
 #| label: tbl-hp-summary
 #| tbl-cap: "Summary statistics of horsepower across both types of transmissions in cars."
+library(knitr)
+
 cars |>
   group_by(transmission) |>
   summarise(
@@ -49,7 +53,8 @@ cars |>
     sd_hp = round(sd(hp), 1),
     min_hp = min(hp),
     max_hp = max(hp)
-  )
+  ) |> 
+  kable()
 ```
 
 Automatic cars in this dataset actually have a higher mean horsepower than manual cars, but the standard deviation is large and the sample size is small. The distribution matters more than the mean.

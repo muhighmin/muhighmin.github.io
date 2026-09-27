@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Do Manual Cars Really Pack More Horsepower?\n\n\nAnalysis with: R (dplyr, ggplot2), Quarto\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\nMuhighmin\n\n\n\n\n\n\n\n\n\n\n\n\nCan Flipper Length be used to identify Penguin Species?\n\n\nBuilt with: Python(Pandas, Matplotlib), Quarto\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\nNo matching items"
+    "text": "Which Penguin Species Has the Biggest Bill?\n\n\nBuilt with: Python (pandas), R (ggplot2), Quarto, reticulate\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\n\n\n\n\n\n\n\nDo Manual Cars Really Pack More Horsepower?\n\n\nAnalysis with: R (dplyr, ggplot2), Quarto\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\nMuhighmin\n\n\n\n\n\n\n\n\n\n\n\n\nCan Flipper Length be used to identify Penguin Species?\n\n\nBuilt with: Python(Pandas, Matplotlib), Quarto\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nAhmed Muhaimin Choudhury\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -74,14 +74,14 @@
     "href": "posts/python-analysis-post-palmerpenguins/index.html#data",
     "title": "Can Flipper Length be used to identify Penguin Species?",
     "section": "Data",
-    "text": "Data\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\npenguins = load_penguins().dropna(subset=[\"flipper_length_mm\", \"species\"])\n\nThe Palmer Penguins dataset records measurements from 344 penguins across three species (Adelie, Chinstrap, Gentoo) sampled at Palmer Station, Antarctica. This post looks at one measurement: flipper length."
+    "text": "Data\n\n# setup\nfrom palmerpenguins import load_penguins\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# drop rows missing flipper length or species\npenguins = load_penguins().dropna(subset=[\"flipper_length_mm\", \"species\"])\n\nThe Palmer Penguins dataset records measurements from 344 penguins across three species (Adelie, Chinstrap, Gentoo) sampled at Palmer Station, Antarctica. This post looks at one measurement: flipper length."
   },
   {
     "objectID": "posts/python-analysis-post-palmerpenguins/index.html#summary",
     "href": "posts/python-analysis-post-palmerpenguins/index.html#summary",
     "title": "Can Flipper Length be used to identify Penguin Species?",
     "section": "Summary",
-    "text": "Summary\n\nsummary = (\n    penguins\n    .groupby(\"species\")[\"flipper_length_mm\"]\n    .agg([\"mean\", \"median\", \"std\", \"min\", \"max\", \"count\"])\n    .round(1)\n)\nsummary\n\n\n\nTable 1: Summary statistics of flipper length (mm) across penguin species.\n\n\n\n\n\n\n\n\n\n\nmean\nmedian\nstd\nmin\nmax\ncount\n\n\nspecies\n\n\n\n\n\n\n\n\n\n\nAdelie\n190.0\n190.0\n6.5\n172.0\n210.0\n151\n\n\nChinstrap\n195.8\n196.0\n7.1\n178.0\n212.0\n68\n\n\nGentoo\n217.2\n216.0\n6.5\n203.0\n231.0\n123\n\n\n\n\n\n\n\n\n\n\nBased on flipper length, the three species differ noticeably. Adelie penguins have the shortest flippers on average, Chinstraps sit in the middle, and Gentoos are clearly the largest."
+    "text": "Summary\n\n# summary\nsummary = (\n    penguins\n    .groupby(\"species\")[\"flipper_length_mm\"]\n    .agg([\"mean\", \"median\", \"std\", \"min\", \"max\", \"count\"])\n    .round(1)\n)\nsummary\n\n\n\nTable 1: Summary statistics of flipper length (mm) across penguin species.\n\n\n\n\n\n\n\n\n\n\nmean\nmedian\nstd\nmin\nmax\ncount\n\n\nspecies\n\n\n\n\n\n\n\n\n\n\nAdelie\n190.0\n190.0\n6.5\n172.0\n210.0\n151\n\n\nChinstrap\n195.8\n196.0\n7.1\n178.0\n212.0\n68\n\n\nGentoo\n217.2\n216.0\n6.5\n203.0\n231.0\n123\n\n\n\n\n\n\n\n\n\n\nBased on flipper length, the three species differ noticeably. Adelie penguins have the shortest flippers on average, Chinstraps sit in the middle, and Gentoos are clearly the largest."
   },
   {
     "objectID": "posts/python-analysis-post-palmerpenguins/index.html#visualization",
@@ -116,14 +116,14 @@
     "href": "posts/r-analysis-post-mtcars/index.html#data",
     "title": "Do Manual Cars Really Pack More Horsepower?",
     "section": "Data",
-    "text": "Data\n\nlibrary(dplyr)\nlibrary(ggplot2)\n\ncars &lt;- mtcars |&gt;\n  mutate(transmission = if_else(am == 0, \"Automatic\", \"Manual\"))\n\nThe mtcars dataset records fuel consumption and ten aspects of automobile design and performance for 32 cars from the 1973–74 model year. This post asks one question: Do manual-transmission cars tend to have more horsepower than automatic ones?"
+    "text": "Data\n\n# setup\nlibrary(dplyr)\nlibrary(ggplot2)\n\n# recode transmission from 0/1 to readable labels\ncars &lt;- mtcars |&gt;\n  mutate(transmission = if_else(am == 0, \"Automatic\", \"Manual\"))\n\nThe mtcars dataset records fuel consumption and ten aspects of automobile design and performance for 32 cars from the 1973–74 model year. This post asks one question: Do manual-transmission cars tend to have more horsepower than automatic ones?"
   },
   {
     "objectID": "posts/r-analysis-post-mtcars/index.html#summary",
     "href": "posts/r-analysis-post-mtcars/index.html#summary",
     "title": "Do Manual Cars Really Pack More Horsepower?",
     "section": "Summary",
-    "text": "Summary\n\n\n\nTable 1: Summary statistics of horsepower across both types of transmissions in cars.\n\n\ncars |&gt;\n  group_by(transmission) |&gt;\n  summarise(\n    n = n(),\n    mean_hp = round(mean(hp), 1),\n    median_hp = round(median(hp), 1),\n    sd_hp = round(sd(hp), 1),\n    min_hp = min(hp),\n    max_hp = max(hp)\n  )\n\n# A tibble: 2 × 7\n  transmission     n mean_hp median_hp sd_hp min_hp max_hp\n  &lt;chr&gt;        &lt;int&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1 Automatic       19    160.       175  53.9     62    245\n2 Manual          13    127.       109  84.1     52    335\n\n\n\n\nAutomatic cars in this dataset actually have a higher mean horsepower than manual cars, but the standard deviation is large and the sample size is small. The distribution matters more than the mean."
+    "text": "Summary\n\nlibrary(knitr)\n\ncars |&gt;\n  group_by(transmission) |&gt;\n  summarise(\n    n = n(),\n    mean_hp = round(mean(hp), 1),\n    median_hp = round(median(hp), 1),\n    sd_hp = round(sd(hp), 1),\n    min_hp = min(hp),\n    max_hp = max(hp)\n  ) |&gt; \n  kable()\n\n\n\nTable 1: Summary statistics of horsepower across both types of transmissions in cars.\n\n\n\n\n\n\ntransmission\nn\nmean_hp\nmedian_hp\nsd_hp\nmin_hp\nmax_hp\n\n\n\n\nAutomatic\n19\n160.3\n175\n53.9\n62\n245\n\n\nManual\n13\n126.8\n109\n84.1\n52\n335\n\n\n\n\n\n\n\n\nAutomatic cars in this dataset actually have a higher mean horsepower than manual cars, but the standard deviation is large and the sample size is small. The distribution matters more than the mean."
   },
   {
     "objectID": "posts/r-analysis-post-mtcars/index.html#visualization",
@@ -138,5 +138,75 @@
     "title": "Do Manual Cars Really Pack More Horsepower?",
     "section": "Inference",
     "text": "Inference\nThe density plot tells a more nuanced story than the summary means. Manual cars concentrate in the 60–130 hp range, whereas automatics are more spread out and include a heavier right tail up past 300 hp. The perception that “manuals are always sportier” doesn’t hold in this dataset as it’s the automatics that carry the high-horsepower muscle cars of the mid-1970s. A larger, more modern sample would probably flip the story, but for 1974 Motor Trend cars, automatic transmission and high horsepower go together more often than not."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html",
+    "href": "posts/python-r-analysis-together/index.html",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER, released under CC0.\nThis post uses both Python and R in one document via the reticulate package. Python (pandas) handles the data summary; R (ggplot2) handles the visualization. A pandas DataFrame is passed from Python into R via py$. The analysis tries to find out which penguin species has the biggest bill in the palmer penguin dataset."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#environment",
+    "href": "posts/python-r-analysis-together/index.html#environment",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Environment",
+    "text": "Environment\n\nlibrary(reticulate)\nuse_virtualenv(here::here(\".venv\"))\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1]\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\n\nimport sys\nprint(sys.executable)\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python\n\n\nBoth outputs above should point inside this repository’s renv/ and .venv/ — confirming the two language environments are project-local."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#data-summary-python",
+    "href": "posts/python-r-analysis-together/index.html#data-summary-python",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Data summary (Python)",
+    "text": "Data summary (Python)\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\n\n# drop rows missing species or bill measurements\npenguins = load_penguins().dropna(subset=[\"species\", \"bill_length_mm\", \"bill_depth_mm\"])\n\n\n# mean bill length + depth per species\nsummary_df = (\n    penguins\n    .groupby(\"species\")[[\"bill_length_mm\", \"bill_depth_mm\"]]\n    .mean()\n    .round(2)\n    .reset_index()\n)"
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#handoff-and-plot-r",
+    "href": "posts/python-r-analysis-together/index.html#handoff-and-plot-r",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Handoff and plot (R)",
+    "text": "Handoff and plot (R)\nThe summary_df computed in Python is now available in R as py$summary_df. It arrives as a native R data frame.\n\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)\n\nplot_data &lt;- py$summary_df |&gt;\n  pivot_longer(\n    cols = c(bill_length_mm, bill_depth_mm),\n    names_to = \"measurement\",\n    values_to = \"mm\"\n  ) |&gt;\n  mutate(\n    measurement = recode(measurement,\n      bill_length_mm = \"Bill length\",\n      bill_depth_mm = \"Bill depth\"\n    )\n  )\n\nggplot(plot_data, aes(x = species, y = mm, fill = measurement)) +\n  geom_col(position = \"dodge\", width = 0.7) +\n  labs(\n    x = \"Species\",\n    y = \"Mean value (mm)\",\n    fill = NULL\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Mean bill length and depth across penguin species. Data aggregated in Python (pandas), visualized in R (ggplot2)."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#inference",
+    "href": "posts/python-r-analysis-together/index.html#inference",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Inference",
+    "text": "Inference\nThe plot shows why bill length alone would misclassify Gentoos. Chinstraps and Gentoos both have long bills (~48mm), and Gentoos have distinctly shorter, blockier bills. But a depth-to-length ratio that sets them apart. Bill length identifies Adelie easily; separating Chinstrap from Gentoo needs depth too. This is a small but concrete example of how interoperability strengthens our modelling by bridging the best of features from 2 different languages."
+  },
+  {
+    "objectID": "posts/python-analysis-post-palmerpenguins/index.html#checking-environment",
+    "href": "posts/python-analysis-post-palmerpenguins/index.html#checking-environment",
+    "title": "Can Flipper Length be used to identify Penguin Species?",
+    "section": "Checking Environment",
+    "text": "Checking Environment\n\nimport sys\nprint(sys.executable) # confirm render used the project .venv\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python3\n\n\nThe path above should end in .venv/bin/python inside this repository, confirming the render used the project’s uv-managed environment."
+  },
+  {
+    "objectID": "posts/r-analysis-post-mtcars/index.html#checking-environment",
+    "href": "posts/r-analysis-post-mtcars/index.html#checking-environment",
+    "title": "Do Manual Cars Really Pack More Horsepower?",
+    "section": "Checking Environment",
+    "text": "Checking Environment\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1] # should point to renv/library inside this repo\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\nThis should confirm the render used the project-local renv environment rather than the system R library."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#checking-environment",
+    "href": "posts/python-r-analysis-together/index.html#checking-environment",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Checking Environment",
+    "text": "Checking Environment\n\nlibrary(reticulate)\nuse_virtualenv(here::here(\".venv\"))  # point reticulate at the project venv\n\nR.version.string\n\n[1] \"R version 4.6.1 (2026-06-24)\"\n\n.libPaths()[1]\n\n[1] \"/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/renv/library/macos/R-4.6/aarch64-apple-darwin23\"\n\n\n\nimport sys\nprint(sys.executable)  # confirm reticulate is using the project venv\n\n/Users/muhighmin/Desktop/MDS_V_26/dsci_521/Milestone 2/muhighmin.github.io/.venv/bin/python\n\n\nBoth outputs above should point inside this repository’s renv/ and .venv/ — confirming the two language environments are project-local."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#handoff-and-table-in-r",
+    "href": "posts/python-r-analysis-together/index.html#handoff-and-table-in-r",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Handoff and table in (R)",
+    "text": "Handoff and table in (R)\nThe summary_df computed in Python is now available in R as py$summary_df. It arrives as a native R data frame. We use this to render the table using knitr::kable, so that the table looks prettier than reticulate’s basic looking data dump.\n\nknitr::kable(py$summary_df) #knitting a pretty looking table\n\n\n\nTable 1: Mean bill length and depth across penguin species.\n\n\n\n\n\n\nspecies\nbill_length_mm\nbill_depth_mm\n\n\n\n\nAdelie\n38.79\n18.35\n\n\nChinstrap\n48.83\n18.42\n\n\nGentoo\n47.50\n14.98\n\n\n\n\n\n\n\n\nAdelie penguins have the shortest bills. Chinstraps and Gentoos have similar bill lengths on average, but Gentoos have noticeably shorter bill depth."
+  },
+  {
+    "objectID": "posts/python-r-analysis-together/index.html#visualization-in-r",
+    "href": "posts/python-r-analysis-together/index.html#visualization-in-r",
+    "title": "Which Penguin Species Has the Biggest Bill?",
+    "section": "Visualization in R",
+    "text": "Visualization in R\nNow, we will be using R ggplot2 to visualize the data and take a different look at it.\n\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)\n\n# reshape the pandas DataFrame from Python into long format for grouped bars\nplot_data &lt;- py$summary_df |&gt;\n  pivot_longer(\n    cols = c(bill_length_mm, bill_depth_mm),\n    names_to = \"measurement\",\n    values_to = \"mm\"\n  ) |&gt;\n  mutate(\n    measurement = recode(measurement,\n      bill_length_mm = \"Bill length\",\n      bill_depth_mm = \"Bill depth\"\n    )\n  )\n\nggplot(plot_data, aes(x = species, y = mm, fill = measurement)) +\n  geom_col(position = \"dodge\", width = 0.7) +\n  labs(\n    x = \"Species\",\n    y = \"Mean value (mm)\",\n    fill = NULL\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Mean bill length and depth across penguin species. Data aggregated in Python (pandas), visualized in R (ggplot2)."
   }
 ]

@@ -9,12 +9,12 @@ Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), Palmer 
 
 For this post, I will be applying some newfound skills in Python to do a little analysis on the Palmer Penguins dataset. 
 
-## Environment
+## Checking Environment
 
 ```{python}
 #| label: env-check
 import sys
-print(sys.executable)
+print(sys.executable) # confirm render used the project .venv
 ```
 
 The path above should end in `.venv/bin/python` inside this repository, confirming the render used the project's `uv`-managed environment.
@@ -26,10 +26,12 @@ The path above should end in `.venv/bin/python` inside this repository, confirmi
 #| label: setup
 #| message: false
 #| warning: false
+# setup
 from palmerpenguins import load_penguins
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# drop rows missing flipper length or species
 penguins = load_penguins().dropna(subset=["flipper_length_mm", "species"])
 ```
 
@@ -40,7 +42,7 @@ The Palmer Penguins dataset records measurements from 344 penguins across three 
 ```{python}
 #| label: tbl-flipper-summary
 #| tbl-cap: "Summary statistics of flipper length (mm) across penguin species."
-
+# summary
 summary = (
     penguins
     .groupby("species")["flipper_length_mm"]

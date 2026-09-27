@@ -1,0 +1,109 @@
+---
+title: "Which Penguin Species Has the Biggest Bill?"
+subtitle: "Built with: Python (pandas), R (ggplot2), Quarto, reticulate"
+author: "Ahmed Muhaimin Choudhury"
+date: 2026-09-25
+---
+
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), Palmer Station Antarctica LTER, released under CC0.
+
+This post uses **both Python and R in one document** via the `reticulate` package. Python (pandas) handles the data summary; R (ggplot2) handles the visualization. A pandas DataFrame is passed from Python into R via `py$`. The analysis tries to find out which penguin species has the biggest bill in the palmer penguin dataset.
+
+## Checking Environment
+
+```{r}
+#| label: env-check-r
+#| message: false
+#| warning: false
+library(reticulate)
+use_virtualenv(here::here(".venv"))  # point reticulate at the project venv
+
+R.version.string
+.libPaths()[1]
+```
+
+```{python}
+#| label: env-check-python
+import sys
+print(sys.executable)  # confirm reticulate is using the project venv
+```
+
+Both outputs above should point inside this repository's `renv/` and `.venv/` — confirming the two language environments are project-local.
+
+## Data summary (Python)
+
+```{python}
+#| label: py-summary
+#| message: false
+#| warning: false
+from palmerpenguins import load_penguins
+import pandas as pd
+
+# drop rows missing species or bill measurements
+penguins = load_penguins().dropna(subset=["species", "bill_length_mm", "bill_depth_mm"])
+
+
+# mean bill length + depth per species
+summary_df = (
+    penguins
+    .groupby("species")[["bill_length_mm", "bill_depth_mm"]]
+    .mean()
+    .round(2)
+    .reset_index()
+)
+```
+
+## Handoff and table in (R)
+
+The `summary_df` computed in Python is now available in R as `py$summary_df`. It arrives as a native R data frame. We use this to render the table using knitr::kable, so that the table looks prettier than reticulate's basic looking data dump.
+
+```{r}
+#| label: tbl-py-summary
+#| tbl-cap: "Mean bill length and depth across penguin species."
+knitr::kable(py$summary_df) #knitting a pretty looking table
+```
+Adelie penguins have the shortest bills. Chinstraps and Gentoos have similar bill lengths on average, but Gentoos have noticeably shorter bill depth.
+
+
+## Visualization in R
+Now, we will be using R ggplot2 to visualize the data and take a different look at it. 
+
+
+```{r}
+#| label: fig-bill-dimensions
+#| fig-cap: "Mean bill length and depth across penguin species. Data aggregated in Python (pandas), visualized in R (ggplot2)."
+#| fig-width: 7
+#| fig-height: 4.5
+#| message: false
+#| warning: false
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# reshape the pandas DataFrame from Python into long format for grouped bars
+plot_data <- py$summary_df |>
+  pivot_longer(
+    cols = c(bill_length_mm, bill_depth_mm),
+    names_to = "measurement",
+    values_to = "mm"
+  ) |>
+  mutate(
+    measurement = recode(measurement,
+      bill_length_mm = "Bill length",
+      bill_depth_mm = "Bill depth"
+    )
+  )
+
+ggplot(plot_data, aes(x = species, y = mm, fill = measurement)) +
+  geom_col(position = "dodge", width = 0.7) +
+  labs(
+    x = "Species",
+    y = "Mean value (mm)",
+    fill = NULL
+  ) +
+  theme_minimal()
+```
+
+## Inference
+
+The plot shows why bill length alone would misclassify Gentoos. Chinstraps and Gentoos both have long bills (~48mm), and Gentoos have distinctly shorter, blockier bills. But a depth-to-length ratio that sets them apart. Bill length identifies Adelie easily; separating Chinstrap from Gentoo needs depth too. This is a small but concrete example of how interoperability strengthens our modelling by bridging the best of features from 2 different languages. 
